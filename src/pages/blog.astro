@@ -1,0 +1,36 @@
+---
+import Navbar from "../components/Navbar.astro";
+
+const pageTitle = "Blog";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{pageTitle}</title>
+  </head>
+  <body class="bg-slate-900 text-gray-300 font-sans">
+    <Navbar />
+
+    <main class="max-w-4xl mx-auto px-6 py-16 space-y-8">
+      <header class="text-center">
+        <h1 class="text-5xl font-extrabold tracking-tight mb-2">{pageTitle}</h1>
+      </header>
+
+      <section class="hidden">
+        <ul class="space-y-4">
+          <li>
+            <a
+              href="/posts/nextjs/"
+              class="block p-4 bg-slate-700 rounded-4xl shadow-md hover:shadow-lg transition-shadow border border-gray-200 hover:border-blue-500"
+            >
+            </a>
+          </li>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>

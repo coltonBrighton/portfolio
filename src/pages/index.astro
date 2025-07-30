@@ -1,0 +1,57 @@
+---
+import Navbar from "../components/Navbar.astro";
+import "../styles/global.css";
+
+const pageTitle = "Home";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="generator" content="Astro" />
+    <title>{pageTitle}</title>
+  </head>
+  <body class="bg-slate-900 text-white font-sans">
+    <Navbar />
+    <main class="max-w-3xl mx-auto px-4 py-16 space-y-10">
+      <section class="text-center">
+        <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight leading-tight">
+          Screaming Into The Void About My Coding Adventures
+        </h1>
+        <p class="mt-4 text-lg text-gray-300 max-w-2xl mx-auto">
+          Documenting the chaos and breakthroughs of building things on the web.
+        </p>
+      </section>
+
+      <section class="text-center space-y-6">
+        <h2 class="text-2xl font-semibold">Recent Projects:</h2>
+
+        <div class="text-lg">
+          <p>
+            View my recipe management application built with <strong>React.js</strong> and <strong>Tailwind CSS</strong>{' '}
+            <a
+              href="https://github.com/coltonBrighton/TWOTHYME"
+              class="text-blue-400 hover:underline"
+              target="_blank" rel="noopener noreferrer"
+            >
+              here
+            </a>.
+          </p>
+
+          <p class="mt-6">
+            View my truck RESTful API built with <strong>Java</strong> and <strong>Spring Boot</strong>{' '}
+            <a
+              href="https://github.com/coltonBrighton/Truck-Rest-API"
+              class="text-blue-400 hover:underline"
+              target="_blank" rel="noopener noreferrer"
+            >
+              here
+            </a>.
+          </p>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
